@@ -1,6 +1,10 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
+/*
+    This component is responsable for allowing the user to naviage to the different pages by clicking on the links 
+*/
+
 const Navigation = () => {
     return (
         <>

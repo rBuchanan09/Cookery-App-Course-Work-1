@@ -1,5 +1,10 @@
 import React from "react";
 
+/*
+    This component is responsable for displaying the nutritional data using the item paramater. This function will be called
+    in FetchNutrition and the nutrition data will be passed in as a paramater
+*/
+
 const Nutrition = ({item}) => {
     return(
         <div>

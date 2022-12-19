@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import CreateMenu from "./components/CreateMenu";
 import CreateShoppingList from "./components/CreateShoppingList";
 
+// This is used to connect everything together. This file is used to connect all the pages together.
+
 export default function App() {
   return (
     <BrowserRouter>

@@ -3,6 +3,12 @@ import Accordion from "react-bootstrap/Accordion";
 import FoodItem from "./FoodItem";
 import FetchNutrition from "./FetchNutrition";
 
+/*
+    This component is responsable for looping through all the recipes and then displaying them in a list using 
+    Accordion styling. This component is also responable for displaying the nutritional data under each food item
+    after the food item is clicked after the handle click fuction is called. 
+*/
+
 const Category = ({categoryList, category}) => {
     const [selectedItem, setSelectedItem] = useState("");
 

@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import ShoppingListContext from "./ShoppingListContext";
 
 const SubmitShoppingList = () => {
+    // creating a context for the order 
     const [order, setOrder] = useContext(ShoppingListContext);
     const [nameField, setNameField] = useState(() => {
          // getting stored value
@@ -24,16 +25,22 @@ const SubmitShoppingList = () => {
     }, [nameField, message]);
 
     const addOrder = () => {
+        // getting the new order
         let newOrder = [nameField, ...order];
         const orderString = JSON.stringify(newOrder);
 
+        // setting the output message with the name and orders
         setMessage(
                 "Hi " + nameField + " thank you for your order. You've ordered " + order
         );
+        // settings order function to an empty array
         setOrder([]);
+        // setting name function to an empty string
         setNameField("");
     };
 
+    // this will store the name entered and then call the add order function after the submit order button has been clicked
+    // it will then display the output message showing the name and the items selected
     return (
         <div>
             <h2>Submit Order</h2>

@@ -1,3 +1,5 @@
+// This is the data that will be used to display the recipe information
+
 export const items = [
     {
       id: 1,

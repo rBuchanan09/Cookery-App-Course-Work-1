@@ -4,7 +4,15 @@ import ShoppingListSummary from "./ShoppingListSummary";
 import SubmitShoppingList from "./SubmitShoppingList";
 import {items} from "../data/data";
 
-const CreateShoppingList = ({food}) => {
+/*
+    This component is responsable for looping through all the ingredients and then displaying them in a list.
+    The user will then be able to click on the food them want. Once them have clicked on the food them want the handleClick
+    function will be called and the selected item will be added to a list. After this ShoppingListContext, ShoppingListSummary and
+    SubmitShoppingList will be called.The user will then enter their name into the text box
+    and click submit which will then save the list into the browers localstorage 
+*/
+
+const CreateShoppingList = () => {
     const [selectedItems, setSelectedItems] = useState([]);
     const handleClick = (e, selectedItem) => {
         let newState = [...selectedItems, selectedItem];

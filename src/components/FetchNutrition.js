@@ -1,6 +1,12 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Nutrition from "./Nutrition";
 
+/*
+    This component is responsable for pulling the Nutritinal data from the api. After the data has been successfully
+    pulled from the api and the incoming data length is not equal to 0  Nutrition will be called and the nutrition
+    local variable will be passed into the call to display the data. 
+*/
+
 const FetchData = ({query}) => {
     const [nutrition, setNutrition] = useState(
       {

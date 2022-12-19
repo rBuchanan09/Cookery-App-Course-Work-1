@@ -4,6 +4,14 @@ import MenuSummary from "./MenuSummary";
 import SubmitMenu from "./SubmitMenu";
 import {items} from "../data/data";
 
+/*
+    This component is responsable for looping through all the recipes and then displaying them in a list.
+    The user will then be able to click on the food them want. Once them have clicked on the food them want the handleClick
+    function will be called and the selected item will be added to a list. After this MenuContext, MenuSummary and
+    SubmitMenu will be called.The user will then enter their name into the text box
+    and click submit which will then save the list into the browers localstorage 
+*/
+
 const MenuItems = () => {
     const [selectedItems, setSelectedItems] = useState([]);
     const handleClick = (e, selectedItem) => {
